@@ -75,11 +75,11 @@ table {
   justify-content: space-around;
 }
 
-.colors{
+/* .colors{
   verde: #99cc02;
 roxo:  #8c3873;
 azul: #3bbedd;
-}
+} */
 
 .navbar ul{
   display: flex;
@@ -208,8 +208,11 @@ azul: #3bbedd;
   justify-content: center;
   gap:2rem;
   flex-direction: column;
-  width: 70vw;
+  width: 100vw;
   margin: 0 auto;
+  background-image: url("./fundo-secoes/Prancheta\ 1_5-100.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw;
 }
 
 .sec2 img{
@@ -225,6 +228,7 @@ azul: #3bbedd;
   background-color: #8c3873;
   border-radius: 3rem;
   padding: 2rem;
+  width: 70%;
 }
 
 .nossa-clinica h2{
@@ -257,15 +261,17 @@ azul: #3bbedd;
   justify-content: center;
   gap:2rem;
   flex-direction: column;
-  width: 70vw;
+  width: 100vw;
   margin: 0 auto;
+  background-image: url("./fundo-secoes/Prancheta\ 1_6-100.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw;
 }
 
 .sec3 h2{
   font-size: 5rem;
   color: #8c3873;
   font-family: 'Bebas Neue', cursive;
-
 }
 
 .duvidas{
@@ -274,10 +280,11 @@ azul: #3bbedd;
   justify-content: center;
   flex-wrap: wrap;
   gap:2rem;
+  width: 100%;
 }
 
 .duvidas div{
-  width: 400px;
+  width: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -290,9 +297,7 @@ azul: #3bbedd;
 }
 
 .duvidas div img{
-  border-radius: 50%;
-  background-color: #99cc02;
-  width: 400px;
+  width: 350px;
 }
 
 .sec4{
@@ -331,7 +336,8 @@ strong{
 }
 
 footer img{
-  width: 200px;
+  width: 140px;
+  object-fit: cover;
 }
 
 .title{
