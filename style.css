@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
 *, 
 *:after,
 *:before {
@@ -234,7 +236,8 @@ azul: #3bbedd;
 .nossa-clinica h2{
   color: #fff;
   font-size: 5rem;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Oswald', sans-serif;
+
 
 }
 
@@ -271,7 +274,8 @@ azul: #3bbedd;
 .sec3 h2{
   font-size: 5rem;
   color: #8c3873;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Oswald', sans-serif;
+
 }
 
 .duvidas{
@@ -343,7 +347,8 @@ footer img{
 .title{
   color: #8c3873;
   font-size: 3rem;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Oswald', sans-serif;
+
 }
 
 .marca2{
