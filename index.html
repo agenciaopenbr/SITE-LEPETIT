@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Le PETIT</title>
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   </head>
   <body>
     <div class="app">
+      <a href="https://wa.link/vonx44">
+        <img src="./icones e marca/whatsapp.png" alt="wpp" class="wpp">
+      </a>
+
       <div class="header">
         
         <div class="navbar">
@@ -23,121 +27,47 @@
               <li>DÚVIDAS FREQUENTES</li>
             </a>
 
-              <button onclick="document.getElementById('id01').style.display='block'" class="li">
-                <li>ESPECIALIDADES</li>
-              </button>
+            <a href="#especialidades">
+              <li>ESPECIALIDADES</li>
+            </a>
 
             <a href="#contatos">
               <li>CONTATOS</li>
             </a>
           </ul>
         </div>
-
-                <!-- Slideshow container -->
-        <div class="slideshow-container">
-
-          <!-- Full-width images with number and caption text -->
-          <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="./criativo seçao 01/Prancheta 1-100.jpg" style="width:100%">
-          </div>
-
-          <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="./criativo seçao 01/Prancheta 1_1-100.jpg" style="width:100%">
-          </div>
-
-          <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="./criativo seçao 01/Prancheta 1_2-100.jpg" style="width:100%">
-          </div>
-
-          <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="./criativo seçao 01/Prancheta 1_3-100.jpg" style="width:100%">
-          </div>
-
-          <!-- Next and previous buttons -->
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br>
-
-        <!-- The dots/circles -->
-        <div class="dots">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
       </div>
+      
+      <img src="./criativo seçao 01/imagem-inicial.png" class="img-inicial" style="width:100%">
+
+      <img src="./criativo seçao 01/LEPETIT-RESPONSIVO.png" alt="LEPETIT-RESPONSIVO" class="layout-responsivo">
 
       <div class="sec2">
         <img src="./icones e marca/marca lepetit.png" alt="marca">
 
         <div class="nossa-clinica" id="clinica">
           <h2>NOSSA CLÍNICA</h2>
-          <p>sauidhasuidbudsbbfnvsovnbsisdbas ras fhuasvcuasbcnaoiscbasc asbduiasid
-            vasudasiudhaisndaisdb dhasuidhasuibd ahdoasjd;akpdoashdas gdhsiuadga
-            dasudgasidhaosdjasodhasiohdasdhgaiusgdiasd dahsuidhgasiudas aisdgais
-            basiudasidhas saugdiasgdiuasgdiagdbsaidgasiugfiasugfiasfggfasiugfas.</p>
-            
-            <div class="w3-container">  
-              <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-white especialidades">Especialidades</button>
-              
-              <div id="id01" class="w3-modal">
-               <div class="w3-modal-content w3-card-4 w3-animate-zoom">
-                <header class="w3-container w3-blue"> 
-                 <span onclick="document.getElementById('id01').style.display='none'" 
-                 class="w3-button w3-blue w3-xlarge w3-display-topright">&times;</span>
-                 <h2>Especialidades</h2>
-                </header>
-              
-                <div class="w3-container">
-                  <p>✦ Terapia ABA
-                     <br>
-                    ✦ Fonoaudiologia
-                    <br>
+          <p>Somos especialistas em diagnóstico e intervenção do autismo com
+            mais de 12 especialidades, equipe e estrutura para o tratamento multidisciplinar
+            com seriedade e certificação.</p>
+        </div>
+      </div>
 
-                    ✦ Musicoterapia
-                    <br>
-
-                    ✦ Terapia Ocupacional
-                    <br>
-
-                    ✦ Integração Sensorial
-                    <br>
-
-                    ✦ Psicopedagogia
-                    <br>
-
-                    ✦ Psicomotricidade
-                    <br>
-
-                    ✦ Psicologia
-                    <br>
-
-                    ✦ Neuropsicologia
-                    <br>
-
-                    ✦ Fisioterapia
-                    <br>
-
-                    ✦ Natação
-                    <br>
-
-                    ✦ Hidroterapia
-                    </p>
-                
-                </div>
-              
-                <div class="w3-container w3-light-grey w3-padding">
-                 <button class="w3-button w3-right w3-white w3-border" 
-                 onclick="document.getElementById('id01').style.display='none'">Close</button>
-                </div>
-               </div>
-              </div>
-              
-              </div>
+      <div class="sec2-2" id="especialidades">
+        <h2>ESPECIALIDADES</h2>
+        <div class="tipos-especialidades">
+          <p>Terapia ABA </p>
+          <p>Fonoaudiologia </p>
+          <p>Musicoterapia</p>
+          <p>Psicopedagogia</p>
+          <p>Psicomotricidade</p>
+          <p>Psicologia</p>
+          <p>Neuropsicologia</p>
+          <p> Fisioterapia</p>
+          <p>Natação</p>
+          <p>Hidroterapia</p>
+          <p>Integração Sensorial</p>
+          <p>Terapia Ocupacional</p>
         </div>
       </div>
 
@@ -145,60 +75,226 @@
         <h2>DÚVIDAS FREQUENTES</h2>
         <div class="duvidas">
           <div>
-            <img src="./criativo secao 03/desenhos png/Prancheta 1.png" alt="1">
+            <img src="./criativo secao 03/desenhos png/Prancheta 1.png" alt="1" data-toggle="modal" data-target="#modal1">
             <p>Meu filho ainda não fala,
-              devo me preocupar?</p>
+              devo me preocupar?</p>     
           </div>
 
           <div>
-            <img src="./criativo secao 03/desenhos png/Prancheta 1_1.png" alt="2">
+            <img src="./criativo secao 03/desenhos png/Prancheta 1_1.png" alt="2" data-toggle="modal" data-target="#modal2">
             <p>O que é o TDL?</p>
           </div>
 
           <div>
-            <img src="./criativo secao 03/desenhos png/Prancheta 1_2.png" alt="3">
-            <p>O que é preciso saber sobre
+            <img src="./criativo secao 03/desenhos png/Prancheta 1_2.png" alt="3" data-toggle="modal" data-target="#modal3">
+            <p>O que é 
               o transtorno do processamento
               sensorial?</p>
           </div>
 
           
           <div>
-            <img src="./criativo secao 03/desenhos png/Prancheta 1_3.png" alt="4">
-            <p>O que é preciso saber sobre
-              o transtorno do processamento
-              sensorial?</p>
+            <img src="./criativo secao 03/desenhos png/Prancheta 1_3.png" alt="4" data-toggle="modal" data-target="#modal4">
+            <p>Cada criança tem seu tempo?</p>
           </div>
 
           <div>
-            <img src="./criativo secao 03/desenhos png/Prancheta 1_4.png" alt="5">
-            <p>O que é preciso saber sobre
-              o transtorno do processamento
-              sensorial?</p>
+            <img src="./criativo secao 03/desenhos png/Prancheta 1_4.png" alt="5" data-toggle="modal" data-target="#modal5">
+            <p>O que é Síndrome de Down?</p>
           </div>
 
           <div>
-            <img src="./criativo secao 03/desenhos png/Prancheta 1_5.png" alt="6">
-            <p>O que é preciso saber sobre
-              o transtorno do processamento
-              sensorial?</p>
+            <img src="./criativo secao 03/desenhos png/Prancheta 1_5.png" alt="6" data-toggle="modal" data-target="#modal6">
+            <p>Musicoterapia ajuda no autismo?</p>
           </div>
         </div>
       </div>
 
+      <div class="modaisDuvidas">
+      <!-- Modal 1 -->
+        <div class="modal" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Title" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <p>
+                  Muitos pais enfrentam o dilema de lidar com a ausência de palavras em seus filhos pequenos. É importante lembrar que cada criança tem seu próprio tempo para começar a falar, desde que esse tempo esteja dentro do intervalo considerado normal.
+                </p>
+                <p>
+                  Desde cedo, os seres humanos demonstram habilidades que indicam o desenvolvimento natural adequado, como buscar com os olhos as vozes ao redor, emitir sons espontaneamente e rir. Essas ações indicam que não há problemas de fala ou audição. No entanto, se houver dúvidas ou atrasos no desenvolvimento da linguagem, é aconselhável consultar um especialista para avaliar seu pequenino!
+                </p>
+
+                <a href="">
+                  <button class="btn btn-success agende-avaliacao">Agende uma avaliação</button>
+                </a>
+                
+                <img src="./icones e marca/marca lepetit.png" alt="marca" class="marca-modal">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 2 -->
+        <div class="modal" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Title" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <p>
+                  O Transtorno do Desenvolvimento da Linguagem (TDL), anteriormente conhecido como Distúrbio Específico de Linguagem (DEL), é um transtorno que causa dificuldades persistentes na fala e no desenvolvimento da linguagem em crianças.
+                </p>
+                <p>
+                  Diferentemente de outras condições neurológicas, não está associado a lesões no cérebro ou síndromes específicas. Embora não haja uma causa conhecida para o transtorno, a dificuldade de aprendizagem e desenvolvimento da fala pode estar relacionada a problemas auditivos.
+                </p>
+                <p>
+                  O fonoaudiólogo é um profissional fundamental para o diagnóstico e tratamento do TDL - assim, se seu filho apresentar algum dos sintomas citados, consulte esse especialista a respeito!
+                </p>
+
+                <a href="">
+                  <button class="btn btn-success agende-avaliacao">Agende uma avaliação</button>
+                </a>
+                
+                <img src="./icones e marca/marca lepetit.png" alt="marca" class="marca-modal">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 3 -->
+        <div class="modal" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3Title" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <p>
+                  O Transtorno de Processamento Sensorial (TPS) é uma condição em que o sistema nervoso e o cérebro têm dificuldade em processar e interpretar os estímulos sensoriais do ambiente e do próprio corpo.
+                </p>
+                <p>
+                  É uma disfunção neurofisiológica que leva a uma entrada sensorial inadequada e mal interpretada. Isso significa que uma criança com TPS pode ter dificuldades para processar estímulos como calor, frio, cansaço, fome, luzes e som, tornando atividades cotidianas desafiadoras.
+                </p>
+                <p>
+                  Por muito tempo, a TPS foi associada somente ao autismo, mas descobriu-se que ela pode ou não afetar os pacientes com TEA, além de afetar pessoas sem o transtorno.
+                </p>
+
+                <a href="">
+                  <button class="btn btn-success agende-avaliacao">Agende uma avaliação</button>
+                </a>
+                
+                <img src="./icones e marca/marca lepetit.png" alt="marca" class="marca-modal">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <!-- Modal 4 -->
+          <div class="modal" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal4Title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <p>
+                    Em relação ao neurodesenvolvimento, a ideia de que cada criança tem seu próprio tempo é um mito comum.
+                  </p>
+                  <p>
+                    Existem etapas esperadas do desenvolvimento para cada faixa etária, e se seu filho não estiver progredindo de acordo com elas, é importante buscar um especialista para que avalie a criança e dê um diagnóstico assertivo do problema.
+                  </p>
+                  <p>
+                    É muito importante ressaltar que a intervenção precoce faz muita diferença para o desenvolvimento da criança.
+                  </p>
+  
+                  <a href="">
+                    <button class="btn btn-success agende-avaliacao">Agende uma avaliação</button>
+                  </a>
+                  
+                  <img src="./icones e marca/marca lepetit.png" alt="marca" class="marca-modal">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+            <!-- Modal 5 -->
+            <div class="modal" id="modal5" tabindex="-1" role="dialog" aria-labelledby="modal5Title" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <p>
+                      A síndrome de Down é uma ocorrência genética conhecida como trissomia do cromossomo 21, pois na divisão celular durante a gestação surgem 3 cromossomos numero 21 - um a mais que os dois que são formados naturalmente. Esse material em excesso acaba provocando uma deficiência intelectual, causando atrasos no desenvolvimento, aprendizagem, entre outras.
+                    </p>
+                    <p>
+                      Por que acontece?
+                      Na T21 acontece um ‘erro genético” - já sabemos que não tem ligação alguma com alimentos, poluição ou algo feito pelos pais. A síndrome existe em todas as etnias e classes sociais.                      
+                    </p>
+                    <p>
+                      O que indica que um bebê tem síndrome de Down?
+Primeiramente é realizado um exame físico (ou clínico), e um exame genético chamado Cariótipo, onde é confirmado o diagnóstico. Algumas características comuns nessas criancas são: Hipotonia (flacidez muscular), déficit intelectual e uma face característica.
+                    </p>
+    
+                    <a href="">
+                      <button class="btn btn-success agende-avaliacao">Agende uma avaliação</button>
+                    </a>
+                    
+                    <img src="./icones e marca/marca lepetit.png" alt="marca" class="marca-modal">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          <!-- Modal 6 -->
+          <div class="modal" id="modal6" tabindex="-1" role="dialog" aria-labelledby="modal6Title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <p>
+                    O autismo, também conhecido como Transtorno do Espectro Autista, é um transtorno que causa problemas no desenvolvimento da linguagem, nos processos de comunicação, na interação e no comportamento social das crianças.
+                  </p>
+                  <p>
+                    Segundo a Organização Mundial da Saúde, aproximadamente 70 milhões de pessoas em todo mundo possuem algum grau de autismo, sendo que esse número, só no Brasil, ultrapassa os 2 milhões.                    
+                  </p>
+                  <p>
+                    Crianças com autismo podem se beneficiar bastante da musicoterapia, pois a utilização de instrumentos pode servir como uma importante ferramenta para incentivar a comunicação e a autoexpressão, trazendo qualidade de vida e a interação social.
+                  </p>
+  
+                  <a href="">
+                    <button class="btn btn-success agende-avaliacao">Agende uma avaliação</button>
+                  </a>
+                  
+                  <img src="./icones e marca/marca lepetit.png" alt="marca" class="marca-modal">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+
       <div class="sec4">
         <a href="https://wa.link/vonx44">
-          <img src="./criativo secao 04/imagem penultima secao.jpg" alt="layout">
+          <img src="./criativo secao 04/layout galeria.jpg" alt="layout">
         </a>
       </div>
 
       <footer id="contatos">
         <div>
-          <a href="https://www.google.com/maps/dir/-2.5001984,-44.2793984/le+petit+mapa/@-2.4913066,-44.2685366,18.57z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x7f68dcb7be8bc2b:0x8de67c143e297cc2!2m2!1d-44.2679667!2d-2.491255">
+          <a href="https://www.google.com/maps/dir/-2.5001984,-44.2793984/le+petit+mapa/@-2.4913066,-44.2685366,18.57z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x7f68dcb7be8bc2b:0x8de67c143e297cc2!2m2!1d-44.2679667!2d-2.491255" target="_blank">
             <img src="./icones e marca/mapa.png" alt="mapa" class="mapa">
           </a>
           <div class="infos">
-            <a href="https://www.google.com/maps/dir/-2.5001984,-44.2793984/le+petit+mapa/@-2.4913066,-44.2685366,18.57z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x7f68dcb7be8bc2b:0x8de67c143e297cc2!2m2!1d-44.2679667!2d-2.491255">
+            <a href="https://www.google.com/maps/dir/-2.5001984,-44.2793984/le+petit+mapa/@-2.4913066,-44.2685366,18.57z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x7f68dcb7be8bc2b:0x8de67c143e297cc2!2m2!1d-44.2679667!2d-2.491255" target="_blank">
               <h2 class="title">LOCALIZAÇÃO</h2>
               <strong>Av. dos Sambaquis, 2</strong>
               <p>Quadra 17 - Calhau, São Luís - MA</p>
@@ -211,67 +307,23 @@
         </div>
 
         <div>
-          <div class="infos">
-              <a href="https://www.instagram.com/clinica_lepetit/">
-              <strong>Instagram</strong>
-              <p>@clinica_lepetit</p>
-            </a>
-            </div>
-            <a href="https://www.instagram.com/clinica_lepetit/">
+          <a href="https://www.instagram.com/clinica_lepetit/" target="_blank">
             <img src="./icones e marca/instagram.png" alt="insta" class="insta">
           </a>
+          <div class="infos">
+            <a href="https://www.instagram.com/clinica_lepetit/" target="_blank">
+            <strong>Instagram</strong>
+            <p>@clinica_lepetit</p>
+          </a>
+          </div>
           </div>
       </footer>
     </div>
 
-    <script>
 
-      let slideIndex = 1;
-      showSlides(slideIndex);
-      
-      // Next/previous controls
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
-      }
-      
-      // Thumbnail image controls
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
-      }
-      
-      function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-      }
-      </script>
 
-<script>
-  document.getElementsByClassName("tablink")[0].click();
-  
-  function openCity(evt, cityName) {
-    var i, x, tablinks;
-    x = document.getElementsByClassName("city");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < x.length; i++) {
-      tablinks[i].classList.remove("w3-light-grey");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.classList.add("w3-light-grey");
-  }
-  </script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
   </html>
