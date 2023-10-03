@@ -1,19 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap");
 
-*, 
+*,
 *:after,
 *:before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
-body{
-    font-size: 100%;
-    list-style-type: none;
+body {
+  font-size: 100%;
+  list-style-type: none;
 }
 
 @font-face {
@@ -26,56 +26,179 @@ body{
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-    display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-    line-height: 1;
-    font-family: "Poppins";
+  line-height: 1;
+  font-family: "Poppins";
 }
-ol, ul {
-    list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-    quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-a{
+a {
   text-decoration: none !important;
 }
 
-.wpp{
+#instafeed {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  max-width: 1200px;
+}
+
+@media (max-width: 900px) {
+  #instafeed {
+    grid-template-columns: 1fr;
+  }
+}
+
+#instafeed img {
+  object-fit: cover;
+  width: 100%;
+  height: 450px;
+  border-radius: 8px;
+}
+
+.instafeed-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.insta-button {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  border-radius: 6px;
+  padding: 12px 22px;
+  background-color: #9ba79c;
+  color: white;
+  margin: 20px 0px;
+}
+
+.wpp {
   position: fixed;
   width: 150px;
   z-index: 1000;
@@ -83,12 +206,12 @@ a{
   bottom: 10%;
 }
 
-.layout-responsivo{
+.layout-responsivo {
   display: none;
   visibility: hidden;
 }
 
-.navbar{
+.navbar {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -104,15 +227,15 @@ roxo:  #8c3873;
 azul: #3bbedd;
 } */
 
-.img-inicial{
+.img-inicial {
   width: 80vw !important;
   display: block;
   margin: 0 auto !important;
 }
 
-.navbar ul{
+.navbar ul {
   display: flex;
-  gap:1rem;
+  gap: 1rem;
   background-color: #99cc02;
   padding: 0.5rem 1rem;
   border-radius: 2em;
@@ -120,23 +243,23 @@ azul: #3bbedd;
   text-decoration: none;
 }
 
-.navbar li{
+.navbar li {
   color: #fff;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
 }
 
-.navbar button{
+.navbar button {
   color: #fff;
   background-color: #99cc02;
   border: none;
 }
 
-.w3-container{
+.w3-container {
   color: #000 !important;
 }
 
-.navbar img{
+.navbar img {
   width: 300px;
 }
 
@@ -148,7 +271,7 @@ azul: #3bbedd;
   top: 0;
 }
 
-.slideshow-container img{
+.slideshow-container img {
   border-radius: 2em;
 }
 
@@ -158,7 +281,8 @@ azul: #3bbedd;
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -180,8 +304,9 @@ azul: #3bbedd;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
@@ -216,7 +341,8 @@ azul: #3bbedd;
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -227,22 +353,25 @@ azul: #3bbedd;
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.dots{
+.dots {
   margin-top: -3rem;
   text-align: center;
   z-index: 1000;
 }
 
-
-.sec2{
+.sec2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap:2rem;
+  gap: 2rem;
   flex-direction: column;
   width: 100vw;
   margin: 0 auto;
@@ -251,83 +380,83 @@ azul: #3bbedd;
   background-size: 100vw;
 }
 
-.sec2 img{
+.sec2 img {
   width: 500px;
 }
 
-.nossa-clinica{
+.nossa-clinica {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap:1rem;
+  gap: 1rem;
   flex-direction: column;
   background-color: #8c3873;
   padding: 2rem;
   width: 100%;
 }
 
-.nossa-clinica h2{
+.nossa-clinica h2 {
   color: #fff;
   font-size: 5rem;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
-.nossa-clinica p{
+.nossa-clinica p {
   text-align: center;
   color: #fff;
   font-size: 1.5rem;
   max-width: 50%;
 }
 
-.sec2-2{
+.sec2-2 {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap:2rem;
+  gap: 2rem;
   margin: 2rem auto;
 }
 
-.sec2-2 h2{
+.sec2-2 h2 {
   color: #8c3873;
   font-size: 5rem;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
-.sec2-2 p{
+.sec2-2 p {
   color: #8c3873;
   font-size: 1.5rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #f2f2f2;
   padding: 1rem;
   border-radius: 2em;
   text-align: center;
 }
 
-.tipos-especialidades{
+.tipos-especialidades {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  gap:3rem;
+  gap: 3rem;
   font-weight: 700;
 }
 
-.w3-container p{
+.w3-container p {
   color: #000 !important;
   text-align: left !important;
 }
 
-.especialidades{
+.especialidades {
   color: #8c3873 !important;
   font-size: 2rem;
   border-radius: 2em;
 }
 
-.sec3{
+.sec3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap:2rem;
+  gap: 2rem;
   flex-direction: column;
   width: 100vw;
   margin: 0 auto;
@@ -336,33 +465,33 @@ azul: #3bbedd;
   background-size: 100vw;
 }
 
-.sec3 h2{
+.sec3 h2 {
   font-size: 5rem;
   color: #8c3873;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
-.duvidas{
+.duvidas {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: flex-start;
   justify-items: center;
   margin: 1rem auto;
   flex-wrap: wrap;
-  gap:1rem;
+  gap: 1rem;
   width: 60%;
 }
 
-.duvidas div{
+.duvidas div {
   width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap:1rem;
+  gap: 1rem;
 }
 
-.duvidas div p{
+.duvidas div p {
   text-align: center;
   font-size: 1.5rem;
   font-family: "Poppins";
@@ -370,69 +499,68 @@ azul: #3bbedd;
   font-weight: 700;
 }
 
-.duvidas div img{
+.duvidas div img {
   width: 200px;
 }
 
-.sec4{
+.sec4 {
   width: 80vw;
   margin: 1rem auto;
 }
 
-.sec4 img{
+.sec4 img {
   width: 80vw;
   object-fit: cover;
   border-radius: 2em;
 }
 
-footer{
+footer {
   display: flex !important;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   width: 100vw;
-  gap:3rem;
+  gap: 3rem;
 }
 
-footer p{
+footer p {
   color: #000;
 }
 
-footer div{
+footer div {
   display: flex;
   width: max-content;
   justify-content: center;
-  column-gap:2rem;
+  column-gap: 2rem;
 }
 
-.infos{
+.infos {
   display: flex;
   flex-direction: column;
 }
 
-strong{
+strong {
   font-weight: bold;
   font-size: 1.5rem;
   color: #000;
 }
 
-footer img{
+footer img {
   width: 140px;
   object-fit: cover;
 }
 
-.title{
+.title {
   color: #8c3873;
   font-size: 3rem;
-  font-family: 'Oswald', sans-serif;
-
+  font-family: "Oswald", sans-serif;
 }
 
-.marca2{
+.marca2 {
   width: 400px;
 }
 
-.modal-body{
+.modal-body {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -440,61 +568,61 @@ footer img{
   padding: 1rem 1rem 0 1rem !important;
 }
 
-.modal-content{
+.modal-content {
   border-radius: 2em !important;
 }
 
-.modal-footer{
+.modal-footer {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
 }
 
-.modal-body p{
+.modal-body p {
   font-size: 1rem;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 400;
   text-align: justify;
 }
 
-.marca-modal{
+.marca-modal {
   width: 300px;
   margin: auto;
 }
 
-.agende-avaliacao{
+.agende-avaliacao {
   font-size: 1.2rem !important;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
-@media (max-width: 768px){
-  .wpp{
+@media (max-width: 768px) {
+  .wpp {
     position: fixed;
     width: 100px;
     z-index: 1000;
     right: 8%;
     bottom: 10%;
   }
-  
-.layout-responsivo{
-  display: block;
-  visibility: visible;
-  width: 100vw;
-}
 
-  .navbar{
+  .layout-responsivo {
+    display: block;
+    visibility: visible;
     width: 100vw;
   }
 
-  .navbar img{
+  .navbar {
+    width: 100vw;
+  }
+
+  .navbar img {
     display: none;
     visibility: hidden;
   }
-  .navbar ul{
+  .navbar ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:8px;
+    gap: 8px;
     background-color: #99cc02;
     padding: 0.5rem;
     border-radius: 2em;
@@ -504,16 +632,16 @@ footer img{
     margin: 1rem 0;
   }
 
-  .img-inicial{
-   display: none;
-   visibility: hidden;
+  .img-inicial {
+    display: none;
+    visibility: hidden;
   }
-  
-  .sec2{
+
+  .sec2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:2rem;
+    gap: 2rem;
     flex-direction: column;
     width: 100vw;
     margin: 2rem auto;
@@ -521,143 +649,143 @@ footer img{
     background-repeat: no-repeat;
     background-size: 100vw;
   }
-  
-  .sec2 img{
+
+  .sec2 img {
     display: none;
     visibility: hidden;
   }
 
-  .sec2-2 h2{
+  .sec2-2 h2 {
     color: #8c3873;
     font-size: 36px;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
   }
-  
-  .sec2-2 p{
+
+  .sec2-2 p {
     color: #8c3873;
     font-size: 1rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     background-color: #f2f2f2;
     padding: 1rem;
     border-radius: 2em;
     text-align: center;
   }
 
-  .nossa-clinica{
+  .nossa-clinica {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:1rem;
+    gap: 1rem;
     flex-direction: column;
     background-color: #8c3873;
     border-radius: 0rem;
     padding: 2rem;
     width: 100%;
   }
-  .nossa-clinica h2{
+  .nossa-clinica h2 {
     color: #fff;
     font-size: 36px;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
   }
-  
-  .nossa-clinica p{
+
+  .nossa-clinica p {
     text-align: center;
     color: #fff;
     font-size: 1.2rem;
     max-width: 100%;
   }
 
-  .sec3{
+  .sec3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:2rem;
+    gap: 2rem;
     flex-direction: column;
     width: 100vw;
     margin: 0 auto;
     background-image: none;
   }
-  
-  .sec3 h2{
+
+  .sec3 h2 {
     font-size: 3rem;
     color: #8c3873;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     text-align: center;
   }
-  
-  .duvidas{
+
+  .duvidas {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap:2rem;
+    gap: 2rem;
     width: 90%;
   }
-  
-  .duvidas div{
+
+  .duvidas div {
     width: 40vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:1rem;
+    gap: 1rem;
   }
-  
-  .duvidas div p{
+
+  .duvidas div p {
     text-align: center;
     font-size: 1rem;
   }
-  
-  .duvidas div img{
+
+  .duvidas div img {
     width: 30vw;
   }
 
-  footer{
+  footer {
     flex-direction: column;
-    gap:8px;
+    gap: 8px;
     margin: 2rem auto;
     align-items: flex-start;
     padding-left: 10%;
   }
-  
-  footer div{
+
+  footer div {
     display: flex;
     width: max-content;
     justify-content: center;
     align-items: center;
-    gap:0rem;
+    gap: 0rem;
     column-gap: 1rem;
   }
-  
-  .marca2{
+
+  .marca2 {
     display: none;
   }
 
-  footer img{
+  footer img {
     width: 60px;
     height: 60px;
     object-fit: cover;
   }
 
-  .title{
+  .title {
     color: #8c3873;
     font-size: 2rem;
-    font-family: 'Oswald', sans-serif;
-  
+    font-family: "Oswald", sans-serif;
   }
-  strong{
+  strong {
     font-weight: bold;
     font-size: 1.2rem;
   }
 
-  .tipos-especialidades{
+  .tipos-especialidades {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    gap:1rem;
+    gap: 1rem;
     font-weight: 700;
     width: 90vw;
   }
 
-  .sec4 img, .sec4{
+  .sec4 img,
+  .sec4 {
     width: 100vw;
     border-radius: 0;
   }
